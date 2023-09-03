@@ -1640,7 +1640,9 @@ hr {
     letter-spacing: .1px;
     margin-bottom: 6px
 }
-
+.blog-section .single-post .post-content .content-title:hover{
+    color: rgb(180, 180, 180);
+}
 .blog-section .single-post .post-content .content-description {
     font-size: 14px;
     font-weight: 400;
@@ -1836,3 +1838,35 @@ hr {
         font-size:14px
     }
 }
+
+
+
+.card:hover .card-img-top {
+    transform: scale(1.02);
+    opacity: 0.1;
+    filter: brightness(.5);
+    transition: 0.3s;
+  }
+
+  .card:hover .card-text {
+      transition: .7s;
+    opacity: 1;
+  }
+  .card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    color: #009e66;
+    padding: 10px 15px;
+    pointer-events: none;
+  }
+  .card-text svg{
+    fill: #009e66;
+    margin-top: -3px;
+  }
+
