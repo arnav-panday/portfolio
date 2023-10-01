@@ -1,11 +1,5 @@
-/*!
-  * Item: Kitzu
-  * Description: Personal Portfolio Template
-  * Author/Developer: Exill
-  * Author/Developer URL: https://themeforest.net/user/exill
-  * Version: v2.0.0
-  * License: Themeforest Standard Licenses: https://themeforest.net/licenses
-  */
+
+  @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
   :focus {
     outline: 0
 }
@@ -13,7 +7,143 @@
 ::-moz-focus-inner {
     border: 0
 }
+.section-sm {
+    padding: 40px 0 !important;
+}
+.bg-primary {
+    background-color: #009e66 !important;
+}
+.text-sm-left {
+    text-align: center !important;
+}
+.title{
+    font-family: 'Baloo Paaji', cursive;
+        font-weight: 500;
+        /* font-size: 20px; */
+        /* letter-spacing: -1px; */
+        /* line-height: 1.2; */
+        font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1300 - 300)));
 
+
+}
+.li-btn {
+    --color: #fff;
+    font-family: inherit;
+    display: inline-block;
+    background-color: #009e66;
+    width: 100px;
+    height: 30px;
+    box-shadow: 7px 3px 5px rgba(0, 0, 0, 0.25);
+    /* margin: 20px; */
+    position: relative;
+    /* padding-top: -20px; */
+    overflow: hidden;
+    border: 2px solid black;
+    transition: color .5s;
+    margin-top: -3px;
+    padding: auto;
+    border: none;
+    text-decoration: none;
+    z-index: 1;
+    font-size: 15px;
+    /* padding: 2px 2px; */
+    border-radius: 24px;
+    font-weight: 500;
+    color: var(--color);
+  }
+  
+  .li-btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+  
+  
+    border-radius: 50%;
+  }
+  .buttonhired{
+    color: #fff !important;
+  }
+  
+  .li-btn:hover {
+    color: #000 !important;
+    box-shadow: 0px 10px 20px #009e66;
+  }
+  .li-btn:hover .buttonhired{
+    color: #000 !important;
+  }
+  .li-btn:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+  }
+  
+  .li-btn:hover:before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .li-btn:active:before {
+    background: #009e66;
+    transition: background 0.5s;
+  }
+.m-0{
+    font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
+    font-weight: 50;
+    opacity: 1;
+    color: #111;
+    letter-spacing: .6px;
+    font-family: "Open Sans", sans-serif;}
+    .my-font{
+        display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Baloo Paaji', cursive;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* background-color: transparent; */
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;   
+    border-radius: 0.1rem;
+    /* -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
+
+    }
+
+    
+/* .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+/* .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+} */
+.align-items-center {
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
 body {
     background-color: #111;
     color: #9f9f9f;
@@ -683,7 +813,8 @@ hr {
 }
 
 .navbar .navbar-brand img {
-    width: 75px
+    /* margin-top: -20px; */
+    width: 50px;
     
 }
 
@@ -711,7 +842,7 @@ hr {
 
 @media (max-width: 767.98px) {
     .navbar .navbar-brand img {
-        width:90px
+        width:42px
     }
 
     .navbar .navbar-menu {
@@ -832,7 +963,7 @@ hr {
     text-align: center
 }
 
-.home-area .fixed-wrapper .social-icons i {
+.home-area .fixed-wrapper .social-icons i, svg {
     color: #f3f3f3;
     font-size: 23px;
     line-height: 100%
@@ -846,6 +977,9 @@ hr {
 #linkedin:hover{
     color: #0072b1;
 }
+#threads{
+    fill: white;
+}
 #github:hover{
     color: #7200fe;
 }
@@ -854,6 +988,8 @@ hr {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;}
+    #threads:hover{
+        fill: grey}
 .home-area .home-name {
     color: #fff;
     font-size: 70px;
@@ -956,7 +1092,7 @@ hr {
 
 .info-section .info-content .content-title {
     font-size: 31px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.6;
     margin-bottom: 16px
 }
@@ -1029,7 +1165,9 @@ hr {
 .info-section .info-content .content-follow li a {
     color: #cecece
 }
-
+.threads{
+    fill: #cecece;
+}
 @media (min-width: 992px) and (max-width:1199.98px) {
     .info-section .info-img img {
         -o-object-fit:cover;
