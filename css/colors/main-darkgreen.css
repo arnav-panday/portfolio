@@ -7,7 +7,10 @@
   * License: Themeforest Standard Licenses: https://themeforest.net/licenses
   */
   :root {
-    --custom: #009e66
+    --main-color: #000f9a
+}
+.dark-theme{
+    --main-color: #00d187
 }
 
 .table-custom,.table-custom>td,.table-custom>th {
@@ -23,8 +26,8 @@
 }
 
 .btn-custom {
-    background-color: #009e66;
-    border-color: #009e66;
+    background-color: #000f9a;
+    border-color: #000f9a;
     color: #fff
 }
 
@@ -39,8 +42,8 @@
 }
 
 .btn-custom.disabled,.btn-custom:disabled {
-    background-color: #009e66;
-    border-color: #009e66;
+    background-color: #000f9a;
+    border-color: #000f9a;
     color: #fff
 }
 
@@ -55,13 +58,13 @@
 }
 
 .btn-outline-custom {
-    border-color: #009e66;
-    color: #009e66
+    border-color: #000f9a;
+    color: #000f9a
 }
 
 .btn-outline-custom:hover {
-    background-color: #009e66;
-    border-color: #009e66;
+    background-color: #000f9a;
+    border-color: #000f9a;
     color: #fff
 }
 
@@ -71,12 +74,12 @@
 
 .btn-outline-custom.disabled,.btn-outline-custom:disabled {
     background-color: transparent;
-    color: #009e66
+    color: #000f9a
 }
 
 .btn-outline-custom:not(:disabled):not(.disabled).active,.btn-outline-custom:not(:disabled):not(.disabled):active,.show>.btn-outline-custom.dropdown-toggle {
-    background-color: #009e66;
-    border-color: #009e66;
+    background-color: #000f9a;
+    border-color: #000f9a;
     color: #fff
 }
 
@@ -85,7 +88,7 @@
 }
 
 .badge-custom {
-    background-color: #009e66;
+    background-color: #000f9a;
     color: #fff
 }
 
@@ -130,7 +133,7 @@ a.badge-custom.focus,a.badge-custom:focus {
 }
 
 .bg-custom {
-    background-color: #009e66!important
+    background-color: #000f9a!important
 }
 
 a.bg-custom:focus,a.bg-custom:hover,button.bg-custom:focus,button.bg-custom:hover {
@@ -138,11 +141,11 @@ a.bg-custom:focus,a.bg-custom:hover,button.bg-custom:focus,button.bg-custom:hove
 }
 
 .border-custom {
-    border-color: #009e66!important
+    border-color: #000f9a!important
 }
 
 .text-custom {
-    color: #009e66!important
+    color: #000f9a!important
 }
 
 a.text-custom:focus,a.text-custom:hover {
@@ -150,17 +153,17 @@ a.text-custom:focus,a.text-custom:hover {
 }
 
 ::-moz-selection {
-    background-color: #009e66;
+    background-color: #000f9a;
     color: #fff
 }
 
 ::selection {
-    background-color: #009e66;
+    background-color: #000f9a;
     color: #fff
 }
 
 a:not(.btn) {
-    color: #009e66
+    color: var(--main-color)
 }
 
 a:not(.btn):focus,a:not(.btn):hover {
@@ -168,16 +171,16 @@ a:not(.btn):focus,a:not(.btn):hover {
 }
 
 .color-scheme {
-    color: #009e66
+    color: #000f9a
 }
 
 .background-scheme {
-    background-color: #009e66
+    background-color: #000f9a
 }
 
 .btn.button-scheme {
-    background-color: #009e66!important;
-    border: 1px solid #009e66!important
+    background-color: var(--main-color)!important;
+    border: 1px solid var(--main-color)!important
 }
 
 .btn.button-scheme:focus {
@@ -188,7 +191,7 @@ a:not(.btn):focus,a:not(.btn):hover {
 
 .btn.button-outline {
     background-color: transparent!important;
-    border: 1px solid #009e66!important;
+    border: 1px solid #000f9a!important;
     color: #222!important
 }
 
@@ -199,73 +202,77 @@ a:not(.btn):focus,a:not(.btn):hover {
 }
 
 .lightbox-wrapper .lightbox-content .section-heading.page-heading>.animated-bar {
-    background-color: #009e66
+    background-color: var(--main-color)
 }
 
 .info-section .info-content .content-subtitle {
-    color: #009e66
+    color: var(--main-color)
 }
 
 .info-section .info-content .content-follow li a:focus,.info-section .info-content .content-follow li a:hover {
-    color: #009e66
+    color: #000f9a
 }
-
+.threads:hover{
+    fill: #000f9a;
+}
 .services-section .single-service:hover {
-    border-bottom-color: #009e66
+    border-bottom-color: var(--main-color)
 }
 
 .services-section .single-service .service-icon {
-    color: #009e66;
-    fill: #009e66;
+    color: var(--main-color);
+    fill: var(--main-color);
 }
 
 .testimonials-section .single-review .review-icon {
-    color: #009e66
+    color: #000f9a
 }
 
 .pricing-section .single-plan .plan-icon {
-    color: #009e66
+    color: #000f9a
 }
 
 .resume-section .resume-item {
-    border-left-color: #009e66
+    border-left-color: #000f9a
 }
 
 .resume-section .resume-item .item-arrow:before {
-    background-color: #009e66
+    background-color: #000f9a
 }
 
 .resume-section .resume-item .item-arrow:after {
-    border-left-color: #009e66
+    border-left-color: #000f9a
 }
 
 .skills-section .single-skill .skill-progress .progress-bar {
-    background-color: #009e66
+    background-color: var(--main-color)
 }
 
 .portfolio-section .filter-control>li.tab-active,.portfolio-section .filter-control>li:hover {
-    color: #00bd7a
+    color: var(--main-color)
 }
 
 .portfolio-section .filter-control>li.tab-active:before,.portfolio-section .filter-control>li:hover:before {
-    background-color: #00bd7a
+    background-color: var(--main-color)
 }
 
 .portfolio-section .portfolio-grid .portfolio-wrapper .item-content .content-more {
-    color: #009e66
+    color: var(--main-color)
 }
 
 .blog-section .single-post .post-img .content-date {
-    background-color: #009e66
+    background-color: var(--main-color)
 }
 
 .contact-section .contact-form .form-group .form-control:focus {
-    border-bottom: 1px solid #00d187
+    /* border-bottom: 1px solid #00d187 */
+    border-bottom: 1px solid #000f9a
+
 }
 
 .contact-section .contact-info .list-info .info-icon i {
-    color: #009e66
+    color: var(--main-color)
 }
 .contact-section .contact-info .list-info .info-icon svg {
-    fill: #009e66;
+    fill: var(--main-color);
 }

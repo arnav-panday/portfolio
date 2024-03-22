@@ -229,7 +229,7 @@
                   , n = a.text()
                   , o = i.find(".contact-feedback");
                 t.preventDefault(),
-                a.html("Wait...").addClass("wait").prop("disabled", !0),
+                a.html("Thank you for your message.").addClass("wait").prop("disabled", !0),
                 setTimeout((function() {
                     e.ajax({
                         url: i.attr("action"),

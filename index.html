@@ -9,11 +9,12 @@
   <!-- Description-->
   <meta name="description" content="Personal Portfolio Template">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000f9a">
   <!-- Favicons-->
   <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">                -->
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png"> -->
-  <link rel="shortcut icon" type="image/x-icon" href="img/aplogo.png?">
+  <link rel="shortcut icon" type="image/x-icon" href="img/aplogo-dark.png?">
   <!-- Web fonts-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <link
@@ -27,6 +28,7 @@
   <link rel="stylesheet" href="css/lity.min.css">
   <link rel="stylesheet" href="css/simplebar.min.css">
   <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
+  <link rel="stylesheet" href="css/custom.css">
   <!-- Main CSS-->
   <link rel="stylesheet" href="css/main.css">
   <!-- CSS Color scheme-->
@@ -39,6 +41,7 @@
 </head>
 
 <body class="theme-dark">
+  
   <!-- Preloader-->
   <div class="preloader">
     <div class="preloader-block">
@@ -47,40 +50,61 @@
     </div>
   </div>
   <div id="overlay-effect"></div>
-  <!-- Navbar-->
+  <!-- Navbar-->  <div class="custom-cursor"></div>
+
+
   <nav class="navbar-expand-md navbar fixed-top" id="navbar"><a class="navbar-brand" data-scroll="" href="https://bit.ly/arnavpanday">
       <!-- Navbar Logo-->
-      <img class="img-fluid" src="img/aplogo.png" alt="Logo"></a>
+      <img class="img-fluid" id="navlogo" src="img/aplogo-dark.png" alt="Logo"></a>
     <span class="navbar-menu ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" role="button"><span
         class="btn-line"></span></span>
     <div class="collapse navbar-collapse order-1 order-lg-0" id="navbarSupportedContent">
       <!-- Navbar menu-->
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#blog">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link clickable" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link clickable" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link clickable" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link clickable" href="#blog">Projects</a></li>
+        <li class="nav-item"><a class="nav-link clickable" href="#contact">Contact</a></li>
+        <!-- <li class="nav-item"><button class="nav-link clickable toggleThemeButton " href="">Light</button></li> -->
+
         <div>
-        <li class="nav-item"><button class="li-btn"><a class="buttonhired" href="https://forms.gle/FeRpfmCj674VhnRR9" target="_blank">Hire Me</a></button></li></div>
+        <li class="nav-item "><button class="li-btn clickable"><a class="buttonhired " href="https://forms.gle/FeRpfmCj674VhnRR9" target="_blank"><span class="spanuu">Hire Me</span> </a></button></li></div>
+       <li><a > <label class="ui-switch">
+          <input type="checkbox" id="moonicon">
+          <div class="slider">
+            <div class="circle"></div>
+          </div>
+        </label></a></li>
+        
       </ul>
-    </div>
+      
+          </div>
+       
   </nav>
+  
+  <!-- <div class="pointer"></div> -->
+
   <!-- Home-->
-  <section class="home-area element-cover-bg video-variant" id="home" style="background-image:url(img/home1.png)">
-    <div class="player" id="homeVideo"
+  <section class="home-area element-cover-bg video-variant"  id="home" style="background-image:url(img/bg_00001.png)">
+    <!-- <div class="player" id="homeVideo"
       data-property="{videoURL:'https://youtu.be/KR97TgpMyrc',containment:'#home',autoPlay:true, mute:true, showControls:false, stopMovieOnBlur:false, showYTLogo: false}">
-    </div>
+    </div> -->
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center">
         <div class="col-12 col-lg-8 home-content text-center">
-          <h1 class="home-name">Arnav <span>Panday</span></h1>
+          <!-- <h1 class="home-name">Arnav <span>Panday</span></h1> -->
           <h4 class="cd-headline clip home-headline">I’m a<span class="cd-words-wrapper single-headline"><b
                 class="is-visible">&nbsp;Freelancer</b><b>&nbsp;
                 Fullstack Web Developer</b><b>&nbsp;Graphic Designer</b><b>&nbsp;Video
                 Editor</b><b>&nbsp;Marketer</b><b>&nbsp;Social Media Manager</b></span>
-          </h4>
+                
+                        </h4>
+                        <div class="marquee-container">
+                          <h1 class="marqueename">Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday - Arnav Panday</h1>
+                          
+                      </div>
         </div>
       </div>
     </div>
@@ -94,17 +118,17 @@
       <!-- Social media icons-->
       <div class="fixed-block block-right">
         <ul class="list-unstyled social-icons">
-          <li><a href="https://www.instagram.com/arnavpanday_/" target="_blank"><i id="ig"
+          <li  class="clickable" ><a href="https://www.instagram.com/arnavpanday_/" target="_blank"><i id="ig"
             class="fab fa-instagram"></i></a></li>
-          <li><a href="https://twitter.com/_ArnavPanday" target="_blank"><i id="twitter" class="fab fa-twitter"></i></a>
+          <li  class="clickable" ><a href="https://twitter.com/_ArnavPanday" target="_blank"><i id="twitter" class="fab fa-twitter"></i></a>
           </li>
           <!-- <li><a href="#"><i id="fb" class="fab fa-facebook"></i></a></li> -->
-          <li><a href="https://www.linkedin.com/in/arnavpanday/" target="_blank"><i id="linkedin"
+          <li class="clickable" ><a href="https://www.linkedin.com/in/arnavpanday/" target="_blank"><i id="linkedin"
                 class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/arnav-panday" target="_blank "><i id="github" class="fab fa-github"></i></a>
-          </li>
+          <!-- <li class="clickable" ><a href="https://github.com/arnav-panday" target="_blank "><i id="github" class="fab fa-github"></i></a>
+          </li> -->
          
-          <li><a href="https://www.threads.net/@arnavpanday_" target="_blank"><svg id="threads"
+          <li class="clickable" ><a href="https://www.threads.net/@arnavpanday_" target="_blank"><svg id="threads"
                 xmlns="http://www.w3.org/2000/svg" height="1em"
                 viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                 <path
@@ -137,7 +161,7 @@
             <div class="info-section single-section">
               <div class="row align-items-center">
                 <!-- Picture part-->
-                <div class="col-12 col-lg-5 info-img"><img class="img-fluid img-thumbnail" src="img/apshoot4.jpg"
+                <div class="col-12 col-lg-5 info-img"><img class="img-fluid img-thumbnail" src="img/image.png"
                     alt="About Picture"></div>
                 <!-- Content part-->
                 <div class="col-12 col-lg-7 info-content">
@@ -161,12 +185,12 @@
                           <p>Arnav Panday</p>
                         </div>
                         <div class="col-12 col-md-6 single-info"><span>Email:</span>
-                          <p><a href="mailto:mailtoarnavp@gmail.com">mailtoarnavp@gmail.com</a></p>
+                          <p  class="clickable" ><a href="mailto:mailtoarnavp@gmail.com">mailtoarnavp@gmail.com</a></p>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-12 col-md-6 single-info"><span>Instagram:</span>
-                          <p><a href="https://www.instagram.com/arnavpanday_/" target="_blank">arnavpanday_</p></a>
+                          <p  class="clickable" ><a href="https://www.instagram.com/arnavpanday_/" target="_blank">arnavpanday_</p></a>
                         </div>
                         <div class="col-12 col-md-6 single-info"><span>From:</span>
                           <p>Delhi, India</p>
@@ -177,15 +201,15 @@
                       <!-- <a
                         class="btn content-download button-main button-scheme" href="#0" role="button">Download CV</a> -->
                       <ul class="list-unstyled list-inline content-follow">
-                        <li class="list-inline-item"><a href="https://www.instagram.com/arnavpanday_/"
+                        <li class="list-inline-item clickable"><a href="https://www.instagram.com/arnavpanday_/"
                             target="_blank"><i class="fab fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="https://twitter.com/_ArnavPanday" target="_blank"><i
-                              class="fab fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/arnavpanday/"
+                        <li class="list-inline-item clickable"><a href="https://twitter.com/_ArnavPanday" target="_blank"><i
+                              class="fab fa-twitter clickable"></i></a></li>
+                        <li class="list-inline-item clickable"><a href="https://www.linkedin.com/in/arnavpanday/"
                             target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                        <li class="list-inline-item"><a href="https://github.com/arnav-panday" target="_blank"><i
-                              class="fab fa-github"></i></a></li>
-                        <li class="list-inline-item"><a href="https://www.threads.net/@arnavpanday_"
+                        <!-- <li class="list-inline-item clickable"><a href="https://github.com/arnav-panday" target="_blank"><i
+                              class="fab fa-github"></i></a></li> -->
+                        <li class="list-inline-item clickable"><a href="https://www.threads.net/@arnavpanday_"
                             target="_blank"><svg class="threads" xmlns="http://www.w3.org/2000/svg" height="1em"
                               viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                               <path
@@ -401,7 +425,7 @@
             <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
           </div>
           <div class="col-sm offset-sm-2 offset-md-3">
-            <button class="btn btn-lg my-font btn-light rounded "><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrA26hUF6thMAC1s3bTYbmAMkqcmewWpRnntCrj8nG_fOSzQ/viewform?usp=sf_link" target="_blank">Hire Me</a>
+            <button class="btn btn-lg my-font btn-light rounded  clickable "><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrA26hUF6thMAC1s3bTYbmAMkqcmewWpRnntCrj8nG_fOSzQ/viewform?usp=sf_link" target="_blank">Hire Me</a>
                </button>
           </div>
         </div> <!-- end of row -->
@@ -564,7 +588,7 @@
             <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
           </div>
           <div class="col-sm offset-sm-2 offset-md-3">
-            <button class="btn btn-lg my-font btn-light rounded "><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrA26hUF6thMAC1s3bTYbmAMkqcmewWpRnntCrj8nG_fOSzQ/viewform?usp=sf_link" target="_blank">Hire Me</a>
+            <button class="btn btn-lg my-font btn-light rounded clickable "><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrA26hUF6thMAC1s3bTYbmAMkqcmewWpRnntCrj8nG_fOSzQ/viewform?usp=sf_link" target="_blank">Hire Me</a>
                </button>
           </div>
         </div> <!-- end of row -->
@@ -595,13 +619,14 @@
                 <!-- Filter nav-->
                 <div class="col-12">
                   <ul class="list-inline filter-control" role="group" aria-label="Filter Control">
-                    <li class="list-inline-item tab-active" data-filter="*">All</li>
-                    <li class="list-inline-item" data-filter=".grading">Grading</li>
-                    <li class="list-inline-item" data-filter=".bgcng">Background Changing</li>
-                    <li class="list-inline-item" data-filter=".retouch">Subject Retouching</li>
-                    <li class="list-inline-item" data-filter=".enhance">Quality Enchance</li>
-                    <li class="list-inline-item" data-filter=".tracking">Tracking</li>
-                    <li class="list-inline-item" data-filter=".tt">Tiktok Edits</li>
+                    <li class="list-inline-item tab-active shrtclk" data-filter="*">All</li>
+                    <li class="list-inline-item shrtclk" data-filter=".grading">Grading</li>
+                    <li class="list-inline-item shrtclk" data-filter=".podcast">Podcast</li>
+                    <li class="list-inline-item shrtclk" data-filter=".bgcng">Background Changing</li>
+                    <li class="list-inline-item shrtclk" data-filter=".retouch">Subject Retouching</li>
+                    <li class="list-inline-item shrtclk" data-filter=".enhance">Quality Enchance</li>
+                    <li class="list-inline-item shrtclk" data-filter=".tracking">Tracking</li>
+                    <li class="list-inline-item shrtclk" data-filter=".tt">Tiktok Edits</li>
 
 
 
@@ -672,11 +697,19 @@
                       </div>
                     </div>
                   </a></div>
-                <div class="single-item col-6 col-lg-4 bgcng"><a class="portfolio-item" href="img/bgchange2.mp4"
+                <div class="single-item col-6 col-lg-4 bgcng "><a class="portfolio-item" href="img/bgchange2.mp4"
                     data-lightbox>
                     <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/bgchange2.png">
                       <div class="item-content">
                         <h6 class="content-title">BACKGROUND CHANGE</h6><span class="content-more">Play Now</span>
+                      </div>
+                    </div>
+                  </a></div>
+                  <div class="single-item col-6 col-lg-4 podcast"><a class="portfolio-item" href="img/podcast.mp4"
+                    data-lightbox>
+                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/podcast2.png">
+                      <div class="item-content">
+                        <h6 class="content-title">Podcast Video Editing</h6><span class="content-more">More Info</span>
                       </div>
                     </div>
                   </a></div>
@@ -731,7 +764,7 @@
             <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
           </div>
           <div class="col-sm offset-sm-2 offset-md-3">
-            <button class="btn btn-lg my-font btn-light rounded "><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrA26hUF6thMAC1s3bTYbmAMkqcmewWpRnntCrj8nG_fOSzQ/viewform?usp=sf_link" target="_blank">Hire Me</a>
+            <button class="btn btn-lg my-font btn-light rounded clickable"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrA26hUF6thMAC1s3bTYbmAMkqcmewWpRnntCrj8nG_fOSzQ/viewform?usp=sf_link" target="_blank">Hire Me</a>
                </button>
           </div>
         </div> <!-- end of row -->
@@ -1192,7 +1225,7 @@
                         <div class="col-12 form-group form-message"><textarea class="form-control" id="contact-message"
                             name="message" placeholder="Message" rows="5" required=""></textarea></div>
 
-                        <div class="col-12 form-submit"><button class="btn button-main button-scheme"
+                        <div class="col-12 form-submit"><button class="btn button-main button-scheme clickable"
                             id="contact-submit" type="submit">Send Message</button>
                           <p class="contact-feedback"></p>
                         </div>
@@ -1219,16 +1252,16 @@
                           </div>
                         </li>
                         <li>
-                          <div class="media align-items-center"><a href="https://www.instagram.com/arnavpanday_/" target="_blank"><span class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></span></a>
+                          <div class="media align-items-center"><a href="https://www.instagram.com/arnavpanday_/" class="clickable" target="_blank"><span class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></span></a>
                             <div class="media-body info-details">
                               <h6 class="info-type">DM me on Instagram</h6><a 
-                                href="https://www.instagram.com/arnavpanday_/" class="igun cickme" target="_blank"><span
-                                  class="info-value">@arnavpanday_</span></a>
+                                href="https://www.instagram.com/arnavpanday_/" class="igun cickme clickable" target="_blank"><span
+                                  class="info-value clickable">@arnavpanday_</span></a>
                             </div>
                           </div>
                         </li>
                         <li>
-                          <div class="media align-items-center"><span class="info-icon"><a class="clickme" href="tel:+918920669869"><svg
+                          <div class="media align-items-center"><span class="info-icon clickable"><a class="clickme clickable" href="tel:+918920669869"><svg
                                 xmlns="http://www.w3.org/2000/svg" height="1em"
                                 viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                 <path
@@ -1241,7 +1274,7 @@
                           </div>
                         </li>
                         <li>
-                          <div class="media align-items-center"><span class="info-icon"><a
+                          <div class="media align-items-center"><span class="info-icon clickable "><a
                             href="mailto:mailtoarnavp@gmail.com"><svg
                                 xmlns="http://www.w3.org/2000/svg" height="1em"
                                 viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -1289,47 +1322,11 @@
   </div>
 
   <!-- removeIf(customizerDist)-->
-  <div class="demo-tool">
-    <div class="tool-wrapper">
-      <span class="tool-toggler"><i class="icon ion-md-settings"></i></span>
-      <div class="tool-box">
-        <ul class="list-inline single-block color-switcher">
-          <li class="list-inline-item" style="background-color: #2c31ff;" data-path="css/colors/main-blueviolet.css">
-          </li>
-          <li class="list-inline-item" style="background-color: #3460D1;" data-path="css/colors/main-nightskyblue.css">
-          </li>
-          <li class="list-inline-item" style="background-color: #EE3158;" data-path="css/colors/main-redpink.css"></li>
-          <li class="list-inline-item" style="background-color: #007bff;" data-path="css/colors/main-blue.css"></li>
-          <li class="list-inline-item" style="background-color: #17a2b8;" data-path="css/colors/main-cyan.css"></li>
-          <li class="list-inline-item" style="background-color: #3365b0;" data-path="css/colors/main-darkblue.css"></li>
-          <li class="list-inline-item" style="background-color: #a435b7;" data-path="css/colors/main-darkmagenta.css">
-          </li>
-          <li class="list-inline-item" style="background-color: #c93e70;" data-path="css/colors/main-darkpink.css"></li>
-          <li class="list-inline-item" style="background-color: #bf2a3d;" data-path="css/colors/main-darkred.css"></li>
-          <li class="list-inline-item" style="background-color: #28a745;" data-path="css/colors/main-green.css"></li>
-          <li class="list-inline-item" style="background-color: #6610f2;" data-path="css/colors/main-indigo.css"></li>
-          <li class="list-inline-item" style="background-color: #fd7e14;" data-path="css/colors/main-orange.css"></li>
-          <li class="list-inline-item" style="background-color: #e83e8c;" data-path="css/colors/main-pink.css"></li>
-          <li class="list-inline-item" style="background-color: #6f42c1;" data-path="css/colors/main-purple.css"></li>
-          <li class="list-inline-item" style="background-color: #dc3545;" data-path="css/colors/main-red.css"></li>
-          <li class="list-inline-item" style="background-color: #20c997;" data-path="css/colors/main-teal.css"></li>
-          <li class="list-inline-item" style="background-color: #333;" data-path="css/colors/main-dark.css"></li>
-          <li class="list-inline-item" style="background-color: #78b230;" data-path="css/colors/main-yellowgreen.css">
-          </li>
-          <li class="list-inline-item" style="background-color: #E16F7C;" data-path="css/colors/main-tangopink.css">
-          </li>
-          <li class="list-inline-item" style="background-color: #6F73D2;" data-path="css/colors/main-moodyblue.css">
-          </li>
-          <li class="list-inline-item" style="background-color: #664C43;" data-path="css/colors/main-brown.css"></li>
-          <li class="list-inline-item" style="background-color: #4770D9;" data-path="css/colors/main-royalblue.css">
-          </li>
-          <li class="list-inline-item" style="background-color: #ffb100;" data-path="css/colors/main-darkyellow.css">
-          </li>
-        </ul>
-        <div class="single-block buy-btn mb-0">
+  
+        <!-- <div class="single-block buy-btn mb-0">
           <a class="btn btn-success btn-sm" target="_blank"
             href="https://themeforest.net/item/kitzu-personal-portfolio-template/26075107" role="button">Buy Kitzu</a>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -1345,11 +1342,55 @@
   <script src="js/simplebar.min.js"></script>
   <script src="js/jquery.mb.YTPlayer.min.js"></script>
   <script src="js/main.js"></script>
-  <!-- Custom JS (Add your custom JS scripts to this file)-->
   <script src="js/custom.js"></script>
+  <!-- Custom JS (Add your custom JS scripts to this file)-->
+ 
   <!-- removeIf(customizerDist)-->
   <script src="../customizer/main.js"></script>
   <!-- endremoveIf(customizerDist)-->
+  <script>
+    var icon = document.getElementById("moonicon");
+    var bg = document.getElementById("home");
+    var logo = document.getElementById("navlogo");
+    var favicon = document.querySelector("link[rel='shortcut icon']");
+    var isDarkMode = localStorage.getItem("darkMode") === "true";
+
+    // Function to set dark mode
+    function enableDarkMode() {
+        bg.style.backgroundImage = "url('img/bgdark_00001.png')";
+        logo.src = "img/aplogo.png";
+        favicon.href = "img/aplogo.png";
+        document.body.classList.add("dark-theme");
+        localStorage.setItem("darkMode", "true");
+        icon.checked = true; // Set the checkbox state to checked
+    }
+
+    // Function to set light mode
+    function enableLightMode() {
+        bg.style.backgroundImage = "url('img/bg_00001.png')";
+        logo.src = "img/aplogo-dark.png";
+        favicon.href = "img/aplogo-dark.png";
+        document.body.classList.remove("dark-theme");
+        localStorage.setItem("darkMode", "false");
+        icon.checked = false; // Set the checkbox state to unchecked
+    }
+
+    // Toggle mode based on localStorage
+    if (isDarkMode) {
+        enableDarkMode();
+    } else {
+        enableLightMode();
+    }
+
+    // Toggle mode when the checkbox state changes
+    icon.addEventListener('change', function() {
+        if (this.checked) {
+            enableDarkMode();
+        } else {
+            enableLightMode();
+        }
+    });
+</script>
   <script>
     function prepareEmailMessage(event) {
       event.preventDefault(); // Prevent the form from submitting to the original action
@@ -1381,6 +1422,59 @@
       // Open the user's default email client with the pre-populated message, subject, and recipient
       window.location.href = mailtoUrl;
     }
+  </script>
+<script>// ====== DEFAULT DECLARE ====== //
+  const buttonsBox = document.querySelectorAll('.clickable');
+  const pointer = document.querySelector('.pointer');
+  const clickey = document.querySelector('.clickablebtn');
+  const shortlist = document.querySelectorAll('.shrtclk')
+
+  // const spanuu = document.querySelectorAll('.spanuu')
+  
+  
+  // ======BUTTON EVENT====== //
+  buttonsBox.forEach(buttonBox =>{
+      buttonBox.addEventListener('mousemove', (e)=>{
+          const position = buttonBox.getBoundingClientRect();
+          //Get the correct position of cursor when hover to the button
+          const x = e.pageX - position.left - position.width / 2;
+          const y = e.pageY - position.top - position.height / 2;
+  
+          //Set the button position
+          buttonBox.style.transform = `translate(${x * 1.00}px, ${y * 1.00}px)`;
+          shortlist.style.transform = `translate(${x * 0.50}px, ${y * 1.00}px)`;
+
+         
+          //Same thing with the span element
+          // spanuu.style.transform = `translate(${x * 4.2}px, ${y * 4.2}px)`;
+          buttonBox.children[0].style.transform =`translate(${x * 3.00}px, ${y * 3.00}px)`;
+
+          pointer.classList.add('buttonHover');
+      })
+  
+      //It change postion but not go back to the original positon, so what we should do
+      buttonBox.addEventListener('mouseout', ()=>{
+          buttonBox.style.transform= `translate(0px, 0px)`;
+          shortlist.style.transform = `translate(0px, 0px)`;
+
+
+          //Same thing with the span element
+          buttonBox.children[0].style.transform = `translate(0px, 0px)`;
+          
+
+          
+          // Remove buttonHover
+          pointer.classList = 'pointer';
+      })
+  })
+  
+  
+  // ======POINTER EVENT====== //
+  //When cursor is moving the pointer will be at cursor position
+  window.addEventListener('mousemove', (e)=>{
+      pointer.style.left = e.clientX + 'px';
+      pointer.style.top = e.clientY + 'px';
+  })
   </script>
 
 
